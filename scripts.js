@@ -27,3 +27,14 @@ function checkUserInput(sequence, userClicks) {
 function equalLengths(state) {
   return state.count === state.userClicks.length;
 }
+
+function playSequence(state) {
+  for (let i = 0; i < state.count; i++) {
+    setTimeout(() => {
+      colors[sequence[i]].style.filter = "saturate(50%)";
+    }, 1000 * (i + 1));
+    setTimeout(() => {
+      colors[sequence[i]].style.filter = "saturate(100%)";
+    }, 1300 * (i + 1));
+  }
+}
