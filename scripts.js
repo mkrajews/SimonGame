@@ -17,3 +17,13 @@ colors.forEach((button, i) => {
     }, 300);
   });
 });
+
+function checkUserInput(sequence, userClicks) {
+  return userClicks.every(v => {
+    return sequence[v] === v;
+  });
+}
+
+function equalLengths(state) {
+  return state.count === state.userClicks.length;
+}
