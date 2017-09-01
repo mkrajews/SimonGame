@@ -38,3 +38,14 @@ function playSequence(state) {
     }, 1300 * (i + 1));
   }
 }
+
+const sequence = Array.from({ length: 20 }, (v, k) => {
+  return Math.floor(Math.random() * 4);
+});
+
+const start = document.getElementsByTagName("button")[0];
+
+const state = {
+  count: 0,
+  userClicks: []
+};
