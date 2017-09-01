@@ -49,3 +49,11 @@ const state = {
   count: 0,
   userClicks: []
 };
+
+start.addEventListener("click", () => {
+  state.count = 1;
+  colors[sequence[0]].style.filter = "saturate(50%)";
+  setTimeout(() => {
+    colors[sequence[0]].style.filter = "saturate(100%)";
+  }, 300);
+});
