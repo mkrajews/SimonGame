@@ -1,1 +1,3 @@
 # SimonGame
+
+Simple Simon game
